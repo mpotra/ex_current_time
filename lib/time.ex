@@ -20,7 +20,7 @@ defprotocol CurrentTime.Time do
       end
 
       iex> mst = %MyStringTime{value: "23:50:07,123Z"}
-      iex> CurrentTime.Date.now(mst)
+      iex> CurrentTime.Time.now(mst)
       ~T[23:50:07.123]
   """
   @spec now(t()) :: Time.t()
